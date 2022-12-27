@@ -5,7 +5,16 @@ const PORT: number = 587;
 const SECURE: boolean = false;
 const SERVICE: string = "Gmail";
 const USER: string = "YOUR_GAMIL_ADDRESS";
-const PASS: string = "YOUR_GMAIL_PASSWORD";
+const PASS: string = "YOUR_GMAIL_PASSWORD"; // read down comment for PASS
+
+/**
+*
+* for PASS following this steps: 
+* 1. Go to https://myaccount.google.com/security
+* 2. Enable 2-step vertification
+* 3. Create App Password for Email
+* 4. Copy that password (16 characters) without spaces into the PASS.
+*/
 
 class Email {
     private readonly transporter: any;
